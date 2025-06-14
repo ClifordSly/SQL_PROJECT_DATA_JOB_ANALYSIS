@@ -1,0 +1,57 @@
+/*
+Question: What are the most in demand skills for data analysts?
+--Join job postings to inner join table similar query2
+--Identify the top 5 in demand skills for a data analyst.
+--Focus on all job postings
+--Why? Retrieves the top 5 skills with the highest demand in job market,
+  providing insights into the most valuable skills for job seekers.
+  */
+
+
+
+WITH remote_jobs_skills AS (
+  SELECT
+    skills_to_job.skill_id,
+    COUNT(*) AS skill_count
+  FROM
+    skills_job_dim AS skills_to_job
+  INNER JOIN job_postings_fact AS job_postings
+    ON job_postings.job_id = skills_to_job.job_id
+  WHERE
+    job_postings.job_work_from_home = TRUE AND
+    job_postings.job_title_short='Data Scientist'
+  GROUP BY
+    skills_to_job.skill_id
+)
+
+-- Join with skills_dim table to get the actual skill names
+SELECT
+  skills_data.skill_id,
+  skills_data.skills AS skill_name,
+  remote_jobs_skills.skill_count
+FROM
+  remote_jobs_skills
+INNER JOIN skills_dim AS skills_data  -- Use consistent alias here
+  ON skills_data.skill_id = remote_jobs_skills.skill_id
+ORDER BY
+  skill_count DESC
+LIMIT
+  5;
+
+
+-- Or we can use
+
+SELECT
+  skills,
+  COUNT(skills_job_dim.job_id) AS demand_count
+FROM job_postings_fact
+INNER JOIN skills_job_dim ON job_postings_fact.job_id=skills_job_dim.job_id
+INNER JOIN skills_dim ON skills_job_dim.skill_id=skills_dim.skill_id
+WHERE
+  job_title_short='Data Analyst'
+GROUP BY
+  skills
+ORDER BY
+  demand_count DESC
+Limit 5
+
