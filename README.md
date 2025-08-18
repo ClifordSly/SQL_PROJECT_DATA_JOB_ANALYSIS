@@ -7,9 +7,9 @@ SQL queries? Check them out here [project_sql folder](/project_SQL/)
 
 # Background
 
-Driven by a quest to naviagate the data analyst job market more effectively, this project was born from a desire to pinpoint top-paid and in-demand skills, streamlining others work to find optimal jobs.
+Driven by a quest to navigate the data analyst job market more effectively, this project was born from a desire to identify the highest-paid and most in-demand skills, helping others streamline their search for optimal job opportunities.
 
-The data for this analysis i got it from Luke Barousse's SQL course (https://www.lukebarousse.com/products/sql-for-data-analytics/categories/2157430710/posts/2186736147). This data has details on job titles, salaries, location and required skills. 
+Using a real world data set of 2024 data science job postings. This data has details on job titles, salaries, location and required skills. 
 
 ### The question I wanted to answer through my SQL queries were:
 
@@ -27,13 +27,13 @@ The data for this analysis i got it from Luke Barousse's SQL course (https://www
 
 For my deep dive into data analyst job market, I harnessed the power of several key tools:
 
-**- SQL:** The backbone of my analysis, allowin me to query the database and unearth critical insights.
+**SQL:** The backbone of my analysis, allowin me to query the database and unearth critical insights.
 
-**- PostgreSQL:** The chosen database management  system, ideal for handling the job posting data.
+**PostgreSQL:** The chosen database management  system, ideal for handling the job posting data.
 
-**- Visual Studio Code:** My go to for database management  and executing SQL queries.
+**Visual Studio Code:** My go to for database management  and executing SQL queries.
 
-**- Git and GitHub:** Essential for version control and sharing my SQL scripts and analysis, ensuring collaboration and project tracking.
+**Git and GitHub:** Essential for version control and sharing my SQL scripts and analysis, ensuring collaboration and project tracking.
 
 # The Analysis
 Each query for this project aimed at investiating specific aspects of the data analyst job market.
@@ -195,11 +195,11 @@ Each query was designed not only to address a specific question but also to deep
 # What I have learned
 Throughout this project, I honed several essential SQL techniques and skills:
 
--**Complex Query Construction:** Learning to build advanced SQL queries that combine multiple tables and utilize functions such as WITH clauses to create temporary result sets, improving both the clarity and efficiency of complex data analysis tasks.
+**Complex Query Construction:** Learning to build advanced SQL queries that combine multiple tables and utilize functions such as WITH clauses to create temporary result sets, improving both the clarity and efficiency of complex data analysis tasks.
 
--**Data Aggregation:** Utilizing GROUP BY and aggregate functions like COUNT() and AVG() to summarize data effectively.
+**Data Aggregation:** Utilizing GROUP BY and aggregate functions like COUNT() and AVG() to summarize data effectively.
 
--**Analytical Thinking:** Developing the ability to translate real-world questions into actionable SQL queries that got insightful answers.
+**Analytical Thinking:** Developing the ability to translate real-world questions into actionable SQL queries that got insightful answers.
 
 # Insights 
 From the analysis, several general insights emerged:
