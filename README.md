@@ -9,7 +9,7 @@ SQL queries? Check them out here [project_sql folder](/project_SQL/)
 
 Driven by a quest to navigate the data analyst job market more effectively, this project was born from a desire to identify the highest-paid and most in-demand skills, helping others streamline their search for optimal job opportunities.
 
-Using a real world data set of 2024 data science job postings. This data has details on job titles, salaries, location and required skills. 
+Using a real world data set of 2025 data science job postings. This data has details on job titles, salaries, location and required skills. 
 
 ### The question I wanted to answer through my SQL queries were:
 
@@ -188,7 +188,7 @@ FROM
 ORDER BY
   demand_count DESC,
   avg_salary DESC
-LIMIT 10;
+LIMIT 25;
 ```
 Each query was designed not only to address a specific question but also to deepen my understanding of SQL and database analysis. This project enabled me to harness SQL’s robust data manipulation features to extract valuable insights from complex datasets.
 
@@ -210,7 +210,7 @@ From the analysis, several general insights emerged:
 
 **3. Most in demand skills:** SQL is also the most in-demand skill in the data analyst job market, making it essential for anyone seeking a role in the field.
 
-**4. Skills with higher salaries:** Specialized skills, such as SVN and Solidity, are associated with the highest average salaries, indicating a premium on niche expertise.
+**4. Skills with higher salaries:** Specialized skills, such as typescript and graphql, are associated with the highest average salaries, indicating a premium on niche expertise.
 
 **5. Optimal skills for job market value:** SQL leads in demand and offers a high average salary, positioning it as one of the most valuable skills for data analysts to learn in order to maximize their market value.
 
